@@ -1,24 +1,8 @@
-2025-01-30 17:49:21:Preliminaries complete. Initiating ETL process
-2025-01-30 17:49:41:Preliminaries complete. Initiating ETL process
-2025-01-30 17:50:08:Preliminaries complete. Initiating ETL process
-2025-01-30 17:51:24:Preliminaries complete. Initiating ETL process
-2025-01-30 17:51:24:Data extraction complete. Initiating Transformation process
-2025-01-30 17:52:31:Preliminaries complete. Initiating ETL process
-2025-01-30 17:52:31:Data extraction complete. Initiating Transformation process
-2025-01-30 17:57:05:Preliminaries complete. Initiating ETL process
-2025-01-30 18:01:33:Preliminaries complete. Initiating ETL process
-2025-01-30 18:04:32:Preliminaries complete. Initiating ETL process
-2025-01-30 18:06:23:Preliminaries complete. Initiating ETL process
-2025-02-03 10:20:20:Preliminaries complete. Initiating ETL process
-2025-02-03 10:30:16:Preliminaries complete. Initiating ETL process
-2025-02-03 10:30:18:Data extraction complete. Initiating Transformation process
-2025-02-03 10:31:33:Preliminaries complete. Initiating ETL process
-2025-02-03 10:31:33:Data extraction complete. Initiating Transformation process
-2025-02-03 11:11:49:Preliminaries complete. Initiating ETL process
-2025-02-03 11:11:50:Data extraction complete. Initiating Transformation process
-2025-02-03 11:13:42:Preliminaries complete. Initiating ETL process
-2025-02-03 11:13:43:Data extraction complete. Initiating Transformation process
-2025-02-03 11:13:43:Data transformation complete. Initiating loading process
-2025-02-03 11:14:19:Preliminaries complete. Initiating ETL process
-2025-02-03 11:14:19:Data extraction complete. Initiating Transformation process
-2025-02-03 11:14:19:Data transformation complete. Initiating loading process
+2025-02-03 13:18:32:Preliminaries complete. Initiating ETL process
+2025-02-03 13:18:35:Data extraction complete. Initiating Transformation process
+2025-02-03 13:18:35:Data transformation complete. Initiating loading process
+2025-02-03 13:18:35:Data Saved to CSV file
+2025-02-03 13:18:35:SQL Connection initiated
+2025-02-03 13:18:35:Data loaded to Database as a table, Executing queries
+2025-02-03 13:18:35:Process Complete
+2025-02-03 13:18:35:Server Connection Closed

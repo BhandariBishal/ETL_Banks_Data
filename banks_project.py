@@ -57,9 +57,42 @@ print(data_frame)
 log_progress('Data transformation complete. Initiating loading process')
 
 
-#csv_path = '/home/project/ETL_Banks_Data/Largest_Banks_By_MC.csv'
-# def load_to_csv(df, output_path):
+output_path = '/home/project/ETL_Banks_Data/Largest_Banks_By_MC.csv'
 
-# def load_to_db(df, sql_connection, table_name):
+def load_to_csv(data_frame, output_path):
+    data_frame.to_csv(output_path)
 
-# def run_query(query_statement, sql_connection):
+load_to_csv(data_frame, output_path)
+log_progress('Data Saved to CSV file')
+
+
+db_name = 'Banks.db'
+table_name = 'Largest_Banks'
+sql_connection = sqlite3.connect(db_name)
+log_progress('SQL Connection initiated')
+
+def load_to_db(df, sql_connection, table_name):
+    df.to_sql(table_name, sql_connection, if_exists = 'replace', index = False)
+
+load_to_db(data_frame, sql_connection, table_name)
+log_progress('Data loaded to Database as a table, Executing queries')
+
+def run_query(query_statement, sql_connection):
+    print(query_statement)
+    output = pd.read_sql(query_statement, sql_connection)
+    print(output)
+
+query_statement = f'Select * From Largest_Banks'
+run_query(query_statement, sql_connection)
+
+query_statement = f"select avg(MC_GBP_Billion) from Largest_Banks"
+run_query(query_statement, sql_connection)
+
+query_statement = f" select Bank_Name from Largest_Banks Limit 5"
+run_query(query_statement, sql_connection)
+
+log_progress('Process Complete')
+
+sql_connection.close()
+log_progress('Server Connection Closed')
+
